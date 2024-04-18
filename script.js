@@ -1,17 +1,17 @@
 function genAnswer(){
   const posVarName = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("")
   const functionNames = [
-    "findEvenNumbers",
-    "getEvenInRange",
-    "evenNumbersBetween",
-    "detectEven",
-    "evenInRange",
-    "extractEven",
-    "evenFinder",
-    "findEvenInRange",
-    "evenBetween",
-    "evenInRangeDetector"
-  ];
+  "findEvns",
+  "getEvens",
+  "evenRng",
+  "evenFndr",
+  "evnRnge",
+  "getEvns",
+  "evenBtwn",
+  "evnFndr",
+  "evnInRng",
+  "evnWthin"
+];
   let functionName = functionNames[Math.floor(Math.random()*functionNames.length)];
   let varNameGlobalA = posVarName[Math.floor(Math.random()*posVarName.length)]
   let varNameGlobalB = posVarName[Math.floor(Math.random()*posVarName.length)]
