@@ -23,8 +23,8 @@ body {
 
 .ta {
   height: 500px;
-  padding-left: 3px !important;
-  padding-right: 3px !important;
+  /*padding-left: 3px !important;*/
+  /*padding-right: 3px !important;*/
 }
 
 .landingTitle {
