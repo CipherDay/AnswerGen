@@ -45,28 +45,28 @@ function genAnswer(){
   let rng = Math.floor(Math.random()*qest1.length)
 
   document.querySelector("#answerArea").textContent = `
-  Algorithm ${functionName+"Algo"}
+Algorithm ${functionName+"Algo"}
+  Variables:
+    ${varNameGlobalA},${varNameGlobalB}:integers
+  Procedure ${functionName}(${varNameGlobalX}:integer,${varNameGlobalY}:integer):
     Variables:
-      ${varNameGlobalA},${varNameGlobalB}:integers
-    Procedure ${functionName}(${varNameGlobalX}:integer,${varNameGlobalY}:integer):
-      Variables:
-        ${varNameGlobalI},${varNameGlobalT}:integer
-      Begin:
-        If (${varNameGlobalX}>${varNameGlobalY}) then:
-          ${varNameGlobalT} ⟸ ${varNameGlobalX}
-          ${varNameGlobalX} ⟸ ${varNameGlobalY}
-          ${varNameGlobalY} ⟸ ${varNameGlobalT}
-        Endif
-        ${posWay[Math.floor(Math.random()*posWay.length)]}
-      End
-    EndProcedure
-    Begin
-      write("${qest1[rng]}")
-      read(${varNameGlobalA})
-      write("${qest2[rng]}")
-      read(${varNameGlobalB})
-      findEvenNumbers(${varNameGlobalA},${varNameGlobalB})
+      ${varNameGlobalI},${varNameGlobalT}:integer
+    Begin:
+      If (${varNameGlobalX}>${varNameGlobalY}) then:
+        ${varNameGlobalT} ⟸ ${varNameGlobalX}
+        ${varNameGlobalX} ⟸ ${varNameGlobalY}
+        ${varNameGlobalY} ⟸ ${varNameGlobalT}
+      Endif
+      ${posWay[Math.floor(Math.random()*posWay.length)]}
     End
+  EndProcedure
+  Begin
+    write("${qest1[rng]}")
+    read(${varNameGlobalA})
+    write("${qest2[rng]}")
+    read(${varNameGlobalB})
+    findEvenNumbers(${varNameGlobalA},${varNameGlobalB})
+  End
   `
 }
 
