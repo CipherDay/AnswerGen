@@ -61,9 +61,9 @@ function genAnswer(){
       End
     EndProcedure
     Begin
-      write(${qest1[rng]})
+      write("${qest1[rng]}")
       read(${varNameGlobalA})
-      write(${qest2[rng]})
+      write("${qest2[rng]}")
       read(${varNameGlobalB})
       findEvenNumbers(${varNameGlobalA},${varNameGlobalB})
     End
